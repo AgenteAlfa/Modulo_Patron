@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Patron">
+
+        <item name="plv_modo">Espera</item>
+
+        <item name="plv_regularCellBackground">@color/BackgroundRegularColor</item>
+        <item name="plv_regularDotColor">@color/regularColor</item>
+
+        <item name="plv_selectedCellBackground">@color/BackgroundSelectedColor</item>
+        <item name="plv_selectedDotColor">@color/selectedColor</item>
+
+        <item name="plv_esperaCellBackground">@color/BackgroundEsperaColor</item>
+        <item name="plv_esperaDotColor">@color/esperaColor</item>
+
+        <item name="plv_errorCellBackground">@color/BackgroundErrorColor</item>
+        <item name="plv_errorDotColor">@color/errorColor</item>
+
+        <item name="plv_regularLineColor">@color/selectedColor</item>
+        <item name="plv_esperaLineColor">@color/errorColor</item>
+        <item name="plv_errorLineColor">@color/esperaColor</item>
+
+        <item name="plv_spacing">12dp</item>
+    </style>
+</resources>

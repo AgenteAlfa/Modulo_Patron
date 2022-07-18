@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Switch
+        android:id="@+id/swcEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:text="Editar"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/sbloqueo_cvSeguridad" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Agrega un patron"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sbloqueo_cvSeguridad"
+        app:layout_constraintEnd_toEndOf="@+id/sbloqueo_cvSeguridad"
+        app:layout_constraintStart_toStartOf="@+id/sbloqueo_cvSeguridad" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sbloqueo_cvSeguridad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39">
+
+        <com.cerobits.patron.Patron
+            android:id="@+id/patron"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:plv_spacing="60dp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Reiniciar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="normal"
+        app:backgroundTint="@color/regularColor"
+        app:layout_constraintEnd_toStartOf="@+id/btnAceptar"
+        app:layout_constraintStart_toStartOf="@+id/sbloqueo_cvSeguridad"
+        app:layout_constraintTop_toBottomOf="@+id/sbloqueo_cvSeguridad" />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="normal"
+        app:backgroundTint="@color/regularColor"
+        app:layout_constraintEnd_toEndOf="@+id/sbloqueo_cvSeguridad"
+        app:layout_constraintStart_toEndOf="@+id/btnReiniciar"
+        app:layout_constraintTop_toTopOf="@+id/btnReiniciar" />
+
+    <TextView
+        android:id="@+id/txtMarcado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/sbloqueo_cvSeguridad"
+        app:layout_constraintStart_toStartOf="@+id/sbloqueo_cvSeguridad"
+        app:layout_constraintTop_toBottomOf="@+id/btnAceptar"
+        tools:text="1 2 3 4 5 6 7 8 9" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcado:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/txtMarcado"
+        app:layout_constraintStart_toStartOf="@+id/txtMarcado" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clave:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/txtClave"
+        app:layout_constraintStart_toStartOf="@+id/txtClave" />
+
+    <TextView
+        android:id="@+id/txtClave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="1 2 3 4 5 6 7 8 9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

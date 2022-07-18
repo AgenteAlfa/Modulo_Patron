@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="regularColor">#FFFFFF</color>
+    <color name="BackgroundRegularColor">#00FFFFFF</color>
+
+    <color name="selectedColor">#DFDFDF</color>
+    <color name="BackgroundSelectedColor">#DFDFDF</color>
+
+    <color name="esperaColor">#0C8BC5</color>
+    <color name="BackgroundEsperaColor">#0C8BC5</color>
+
+    <color name="errorColor">#DA1725</color>
+    <color name="BackgroundErrorColor">#33D80D1B</color>
+
+</resources>
