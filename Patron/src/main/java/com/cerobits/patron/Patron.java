@@ -157,7 +157,8 @@ public class Patron extends GridLayout {
                     cell.postInvalidate();
                 }
                 Activado = false;
-
+                if (onPatternListener != null)
+                    onPatternListener.onComplete(generateSelectedIds());
                 break;
             case SIMPLE:
                 boolean isCorrect = true;
