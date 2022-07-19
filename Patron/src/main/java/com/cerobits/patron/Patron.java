@@ -233,6 +233,10 @@ public class Patron extends GridLayout {
         cell.postInvalidate();
     }
 
+    public boolean isActivado() {
+        return Activado;
+    }
+
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouchEvent(MotionEvent event) {
